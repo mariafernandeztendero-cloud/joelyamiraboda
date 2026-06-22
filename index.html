@@ -3,43 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nombre & Nombre | Nuestra boda</title>
-  <meta name="description" content="Nos hace mucha ilusión compartir este día contigo. Aquí encontrarás toda la información de nuestra boda." />
-
+  <title>Joel & Amira | Nuestra boda</title>
+  <meta name="description" content="Joel y Amira tienen el placer de invitarte a su enlace matrimonial. 06 de diciembre de 2026 en Mas de Sant Lleí." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <header class="hero">
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
     <nav class="nav">
-      <span class="brand">N & N</span>
-      <a href="#rsvp">Confirmar asistencia</a>
+      <a href="#inicio" class="seal-link" aria-label="Inicio"><img src="sello-ja.jpeg" alt="Sello Joel y Amira" class="nav-seal"></a>
+      <a href="#rsvp" class="nav-rsvp">Confirmar asistencia</a>
     </nav>
-
-    <div class="hero-content">
-      <p class="eyebrow">Nos casamos</p>
-      <h1>Nombre & Nombre</h1>
-      <p class="date">Sábado, 12 de octubre de 2026</p>
-      <p class="intro">
-        Hay días que se viven una vez, pero se recuerdan para siempre.
-        Nos hará muy felices compartir el nuestro contigo.
-      </p>
+    <div class="hero-content reveal">
+      <img src="sello-ja.jpeg" alt="Sello JA" class="hero-seal">
+      <p class="eyebrow hero-eyebrow">Junto con sus familias</p>
+      <h1>Joel & Amira</h1>
+      <p class="date">06 · Diciembre · 2026</p>
+      <p class="hero-quote">“Por siempre es un santiamén estando tú.”</p>
       <div class="hero-buttons">
         <a class="btn primary" href="#rsvp">Confirmar asistencia</a>
-        <a class="btn secondary" href="#info">Ver detalles</a>
+        <a class="btn secondary" href="#detalles">Ver detalles</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section countdown-section">
+    <section class="section countdown-section reveal">
       <p class="section-kicker">Cuenta atrás</p>
       <h2>Falta muy poco para celebrar juntos</h2>
-
       <div class="countdown" id="countdown">
         <div><strong id="days">00</strong><span>Días</span></div>
         <div><strong id="hours">00</strong><span>Horas</span></div>
@@ -48,110 +42,84 @@
       </div>
     </section>
 
-    <section class="section story">
-      <div>
+    <section class="section story reveal" id="historia">
+      <div class="story-title">
         <p class="section-kicker">Nuestra historia</p>
-        <h2>Una historia sencilla, bonita y llena de gratitud</h2>
+        <h2>Una historia escrita por Dios</h2>
       </div>
-      <p>
-        Después de tantos momentos compartidos, risas, aprendizajes y sueños,
-        ha llegado el día de dar un paso más. Queremos vivirlo rodeados de las
-        personas que han formado parte de nuestro camino.
-      </p>
+      <div class="story-text">
+        <p>Durante años caminamos por las mismas sendas sin imaginar que Dios estaba escribiendo una historia que aún no alcanzábamos a comprender. Si alguien nos hubiera dicho que terminaríamos aquí, probablemente ninguno de los dos lo habría creído.</p>
+        <p>Pero cuando dos corazones enamorados de Jesús se encuentran, todo lo demás deja de importar. Descubrimos que aquello que más nos unía no eran nuestras diferencias ni nuestras coincidencias, sino una misma esperanza, una misma fe y unas cicatrices que Dios transformó en testimonio.</p>
+        <p>Hoy sabemos que cada paso, cada espera y cada proceso nos trajeron hasta aquí para glorificarle a Él, el verdadero Autor de nuestra historia.</p>
+      </div>
     </section>
 
-    <section class="section details" id="info">
+    <section class="photo-break reveal" aria-label="Joel y Amira">
+      <img src="foto-2.jpeg" alt="Joel y Amira" />
+    </section>
+
+    <section class="section details reveal" id="detalles">
       <p class="section-kicker">El gran día</p>
-      <h2>Detalles de la boda</h2>
+      <h2>Mas de Sant Lleí</h2>
+      <p class="location-text">Vilanova del Vallès · 06 de diciembre de 2026</p>
+      <div class="timeline">
+        <article class="timeline-item"><span class="icon">✉</span><h3>12:00h</h3><p>Bienvenida</p></article>
+        <article class="timeline-item"><span class="icon">♡</span><h3>12:30h</h3><p>Ceremonia</p></article>
+        <article class="timeline-item"><span class="icon">🥂</span><h3>13:30h</h3><p>Aperitivo</p></article>
+        <article class="timeline-item"><span class="icon">🍽</span><h3>15:30h</h3><p>Banquete</p></article>
+        <article class="timeline-item"><span class="icon">♬</span><h3>18:00h</h3><p>Baile nupcial</p></article>
+        <article class="timeline-item"><span class="icon">✦</span><h3>¡Fiesta!</h3><p>A celebrar</p></article>
+      </div>
+      <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Mas%20de%20Sant%20Llei%20Vilanova%20del%20Valles" target="_blank" rel="noopener">Ver ubicación</a>
+    </section>
 
-      <div class="cards">
-        <article class="card">
-          <span class="card-number">01</span>
-          <h3>Ceremonia</h3>
-          <p><strong>12:00 h</strong></p>
-          <p>Iglesia / lugar de la ceremonia</p>
-          <p>Calle ejemplo 123, Ciudad</p>
-          <a href="https://maps.google.com" target="_blank" rel="noopener">Ver ubicación</a>
-        </article>
-
-        <article class="card">
-          <span class="card-number">02</span>
-          <h3>Celebración</h3>
-          <p><strong>14:00 h</strong></p>
-          <p>Masía / restaurante / finca</p>
-          <p>Dirección del banquete</p>
-          <a href="https://maps.google.com" target="_blank" rel="noopener">Ver ubicación</a>
-        </article>
-
-        <article class="card">
-          <span class="card-number">03</span>
-          <h3>Dress code</h3>
-          <p>Elegante y cómodo.</p>
-          <p>Queremos que vengas guapo/a, pero sobre todo que vengas a disfrutar.</p>
-        </article>
+    <section class="verse reveal">
+      <div>
+        <p>“Enséñanos de tal modo a contar nuestros días,<br>que traigamos al corazón sabiduría.”</p>
+        <span>Salmo 90:12</span>
       </div>
     </section>
 
-    <section class="section quote">
-      <p>
-        “La felicidad solo es real cuando se comparte.”
-      </p>
-    </section>
-
-    <section class="section rsvp" id="rsvp">
+    <section class="section rsvp reveal" id="rsvp">
       <div class="rsvp-box">
         <p class="section-kicker">Confirmación</p>
         <h2>¿Vienes a celebrar con nosotros?</h2>
-        <p>
-          Nos ayudará mucho que confirmes tu asistencia.
-          Solo tienes que rellenar el formulario.
-        </p>
-
-        <!-- Cambia este enlace por tu Google Form -->
-        <a class="btn primary" href="https://forms.google.com" target="_blank" rel="noopener">
-          Confirmar asistencia
-        </a>
+        <p>Nos hará mucha ilusión compartir este día contigo. Para ayudarnos con la organización, te agradeceríamos que confirmaras tu asistencia rellenando el formulario.</p>
+        <a class="btn primary" href="https://forms.gle/seWdSYYKLpjN4iXL6" target="_blank" rel="noopener">Confirmar asistencia</a>
       </div>
     </section>
 
-    <section class="section gifts">
+    <section class="section gifts reveal">
       <p class="section-kicker">Regalos</p>
-      <h2>Tu presencia ya es un regalo</h2>
-      <p>
-        Lo más importante para nosotros es compartir este día contigo. Si además
-        quieres ayudarnos en esta nueva etapa, puedes hacerlo aquí:
-      </p>
-      <div class="iban">
-        <span>ES00 0000 0000 0000 0000 0000</span>
-      </div>
+      <h2>Gracias por formar parte de nuestra historia</h2>
+      <p>Vuestra compañía es el recuerdo que más deseamos guardar de este día. Si además queréis acompañarnos en el comienzo de esta nueva etapa, podéis hacerlo con mucho cariño aquí:</p>
+      <div class="iban"><span>ES00 0000 0000 0000 0000 0000</span></div>
     </section>
 
-    <section class="section faq">
-      <p class="section-kicker">Información útil</p>
-      <h2>Preguntas rápidas</h2>
+    <section class="gallery reveal">
+      <img src="foto-3.jpeg" alt="Joel y Amira juntos" />
+      <img src="foto-4.jpeg" alt="Detalle ramo y anillo" />
+      <img src="foto-2.jpeg" alt="Joel y Amira" />
+    </section>
 
+    <section class="section faq reveal">
+      <p class="section-kicker">Información útil</p>
+      <h2>Detalles para invitados</h2>
       <div class="faq-list">
-        <details>
-          <summary>¿Puedo venir con acompañante?</summary>
-          <p>Por organización, por favor confirma solo las personas incluidas en la invitación.</p>
-        </details>
-        <details>
-          <summary>¿Hay aparcamiento?</summary>
-          <p>Sí, el lugar de celebración dispone de zona de aparcamiento cercana.</p>
-        </details>
-        <details>
-          <summary>¿Hasta cuándo puedo confirmar?</summary>
-          <p>Te agradeceríamos que confirmaras antes del 1 de septiembre de 2026.</p>
-        </details>
+        <details><summary>¿Hay dress code?</summary><p>Nos encantará veros especialmente elegantes. El color blanco queda reservado para la novia y los chalecos para el novio.</p></details>
+        <details><summary>¿Hay aparcamiento?</summary><p>Sí. Mas de Sant Lleí dispone de aparcamiento para los invitados.</p></details>
+        <details><summary>¿Hasta cuándo podemos confirmar?</summary><p>Agradeceremos recibir vuestra confirmación antes del último día de octubre.</p></details>
+        <details><summary>¿Hay buenos accesos si tengo movilidad reducida?</summary><p>Sí. Los invitados con movilidad reducida podrán acceder en coche directamente hasta la zona de bienvenida. Después, el conductor podrá bajar el vehículo al parking habilitado.</p></details>
       </div>
     </section>
   </main>
 
   <footer>
+    <img src="sello-ja.jpeg" alt="Sello Joel y Amira" class="footer-seal">
     <p>Con mucha ilusión,</p>
-    <h2>Nombre & Nombre</h2>
+    <h2>Joel & Amira</h2>
+    <span>06 · 12 · 2026</span>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
