@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nombre & Nombre | Nuestra boda</title>
+  <meta name="description" content="Nos hace mucha ilusión compartir este día contigo. Aquí encontrarás toda la información de nuestra boda." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="nav">
+      <span class="brand">N & N</span>
+      <a href="#rsvp">Confirmar asistencia</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Nos casamos</p>
+      <h1>Nombre & Nombre</h1>
+      <p class="date">Sábado, 12 de octubre de 2026</p>
+      <p class="intro">
+        Hay días que se viven una vez, pero se recuerdan para siempre.
+        Nos hará muy felices compartir el nuestro contigo.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#rsvp">Confirmar asistencia</a>
+        <a class="btn secondary" href="#info">Ver detalles</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section countdown-section">
+      <p class="section-kicker">Cuenta atrás</p>
+      <h2>Falta muy poco para celebrar juntos</h2>
+
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>Días</span></div>
+        <div><strong id="hours">00</strong><span>Horas</span></div>
+        <div><strong id="minutes">00</strong><span>Min</span></div>
+        <div><strong id="seconds">00</strong><span>Seg</span></div>
+      </div>
+    </section>
+
+    <section class="section story">
+      <div>
+        <p class="section-kicker">Nuestra historia</p>
+        <h2>Una historia sencilla, bonita y llena de gratitud</h2>
+      </div>
+      <p>
+        Después de tantos momentos compartidos, risas, aprendizajes y sueños,
+        ha llegado el día de dar un paso más. Queremos vivirlo rodeados de las
+        personas que han formado parte de nuestro camino.
+      </p>
+    </section>
+
+    <section class="section details" id="info">
+      <p class="section-kicker">El gran día</p>
+      <h2>Detalles de la boda</h2>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Ceremonia</h3>
+          <p><strong>12:00 h</strong></p>
+          <p>Iglesia / lugar de la ceremonia</p>
+          <p>Calle ejemplo 123, Ciudad</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener">Ver ubicación</a>
+        </article>
+
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Celebración</h3>
+          <p><strong>14:00 h</strong></p>
+          <p>Masía / restaurante / finca</p>
+          <p>Dirección del banquete</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener">Ver ubicación</a>
+        </article>
+
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Dress code</h3>
+          <p>Elegante y cómodo.</p>
+          <p>Queremos que vengas guapo/a, pero sobre todo que vengas a disfrutar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section quote">
+      <p>
+        “La felicidad solo es real cuando se comparte.”
+      </p>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="rsvp-box">
+        <p class="section-kicker">Confirmación</p>
+        <h2>¿Vienes a celebrar con nosotros?</h2>
+        <p>
+          Nos ayudará mucho que confirmes tu asistencia.
+          Solo tienes que rellenar el formulario.
+        </p>
+
+        <!-- Cambia este enlace por tu Google Form -->
+        <a class="btn primary" href="https://forms.google.com" target="_blank" rel="noopener">
+          Confirmar asistencia
+        </a>
+      </div>
+    </section>
+
+    <section class="section gifts">
+      <p class="section-kicker">Regalos</p>
+      <h2>Tu presencia ya es un regalo</h2>
+      <p>
+        Lo más importante para nosotros es compartir este día contigo. Si además
+        quieres ayudarnos en esta nueva etapa, puedes hacerlo aquí:
+      </p>
+      <div class="iban">
+        <span>ES00 0000 0000 0000 0000 0000</span>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <p class="section-kicker">Información útil</p>
+      <h2>Preguntas rápidas</h2>
+
+      <div class="faq-list">
+        <details>
+          <summary>¿Puedo venir con acompañante?</summary>
+          <p>Por organización, por favor confirma solo las personas incluidas en la invitación.</p>
+        </details>
+        <details>
+          <summary>¿Hay aparcamiento?</summary>
+          <p>Sí, el lugar de celebración dispone de zona de aparcamiento cercana.</p>
+        </details>
+        <details>
+          <summary>¿Hasta cuándo puedo confirmar?</summary>
+          <p>Te agradeceríamos que confirmaras antes del 1 de septiembre de 2026.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Con mucha ilusión,</p>
+    <h2>Nombre & Nombre</h2>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
